@@ -1,0 +1,29 @@
+{
+  "name": "jeopardyapp",
+  "version": "1.0.0",
+  "description": "Webapp for creating a jeopardy game and a buzzer system for checking who was first ",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moesen/JeopardyApp.git"
+  },
+  "keywords": [
+    "jeopardy",
+    "webapp"
+  ],
+  "author": "Moesen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moesen/JeopardyApp/issues"
+  },
+  "homepage": "https://github.com/Moesen/JeopardyApp#readme",
+  "engines": {
+    "node": "16.13"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
