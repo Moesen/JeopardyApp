@@ -4,7 +4,9 @@
   "description": "Webapp for creating a jeopardy game and a buzzer system for checking who was first ",
   "main": "web.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./web.js",
+    "watch": "nodemon --ext *"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,14 @@
     "node": "16.13"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "pug": "^3.0.2",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.15"
   }
 }

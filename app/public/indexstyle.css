@@ -1,0 +1,71 @@
+/* ======== FONTS ======== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;900&display=swap');
+
+/* ======== user-defined settings ======== */ 
+:root {
+    --main-color: #060CE9;
+    --second-color: #063be9;
+    --text-color: rgb(245, 245, 245);
+    --text-color-alt: #063be9;
+
+    --first-gradiant: linear-gradient(180deg,#005D98, #060CE9);
+    --blackblue-gradiant: linear-gradient(59deg,#000000, #274EDD);
+}
+
+/* ======== BODY ======== */ 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ======== HEADER ======== */ 
+.nav__container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.nav__title {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.nav__button {
+    text-decoration: none;
+    color: var(--text-color-alt);
+    padding: .25rem;
+    background-color: var(--text-color);
+    transition: .3s;
+    border-radius: .55rem;
+    font-size: 4rem;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+    background-color: var(--text-color-alt);
+    color: var(--text-color);
+}
+
+/* ======== FOOTER ======== */
+footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+} 
+
+.footer__link {
+    font-size: 30px;
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.footer__link:hover {
+    color: var(--text-color-alt);
+}
