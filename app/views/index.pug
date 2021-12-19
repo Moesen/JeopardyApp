@@ -3,15 +3,20 @@ html
     head
         title=title
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        link(rel="stylesheet" href="/indexstyle.css")
+        link(rel="stylesheet" href="/css/indexstyle.css")
+        script(defer, src="/js/indexbuttons.js")
         include includes/header.pug
+
     
     body
         .nav__container
             h1.nav__title=title
-            h2: a(href="/join").nav__button Join
-            h2: a(href="/host").nav__button Host
-            h2: a(href="/create").nav__button Create
+            h2 
+                button.nav__button#join-button Join
+                input#join-input(type="text", name="")
+
+            h2: a(href="/host").nav__button#host-button Host
+            h2: a(href="/create").nav__button#create-button Create
     
     footer: .footer__container
         a(href="https://www.github.com/moesen" target="_blank").footer__link <i class='bx bxl-github'></i>
